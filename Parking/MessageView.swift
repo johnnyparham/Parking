@@ -9,25 +9,31 @@
 import UIKit
 
 class MessageView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    /* I am going to put in the rest of the labels and 
+     2 subviews 
+    */
     
     @IBOutlet weak var tableView: UITableView!
     
-    var parkingLocations = ["junk1","junk2","more Junk!!!"] //some arbitrary things to put in here for testing
-    let reuseIdentifier = "myNib"
-
-
+    var parkingLocations = ["junk1","junk2","more Junk!!!","awesome Junk!"] //some arbitrary things to put in here for testing
+    var testHeaders = ["coolShit1", "coolShit2", "coolShit3"]
+//    let reuseIdentifier = "myNib"
+    let reuseIdentifier = "cell"
+    @IBOutlet weak var navBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        navBar.barTintColor = UIColor(red: 8/255.0, green: 91/255.0, blue: 133/255.0, alpha: 1.0)
+        navBar.tintColor = UIColor(red: 8/255.0, green: 91/255.0, blue: 133/255.0, alpha: 1.0)
+
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 8/255.0, green: 91/255.0, blue: 133/255.0, alpha: 1.0)
-//        title = "Parking Available"
         
         // Register custom cell
-        let nib = UINib(nibName: "LocationCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
+//        let nib = UINib(nibName: "LocationCell", bundle: nil)
+//        tableView.registerNib(nib, forCellReuseIdentifier: reuseIdentifier)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,8 +50,7 @@ class MessageView: UIViewController, UITableViewDelegate, UITableViewDataSource 
     // MARK: - Table view data source
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return testHeaders.count
     }
 
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,19 +61,28 @@ class MessageView: UIViewController, UITableViewDelegate, UITableViewDataSource 
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
-        let cell: TblCell = self.tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as! TblCell
-        cell.label.text = parkingLocations[indexPath.row]
-
+//        let cell: TblCell = self.tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as! TblCell
+        let cell: MyCell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as! MyCell
+        cell.nameLabel.text! = "Nice"
+        cell.fromLabel.text! = "Place1"
+        cell.toLabel.text! = "Place2"
+//        cell.label.text = parkingLocations[indexPath.row]
+        
         cell.layer.borderWidth = 1.0
         cell.layer.borderColor = UIColor(red: 233/255.0, green: 230/255.0, blue: 235/255.0, alpha: 1.0).CGColor
-        // Configure the cell...
 
         return cell
     }
     
-     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 101 as CGFloat
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return testHeaders[section]
     }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20.0 as CGFloat
+    }
+    
+    
     
     /*
     // Override to support conditional editing of the table view.
