@@ -15,6 +15,7 @@
 		8BE65CB11D1E566900D422AD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE65CB01D1E566900D422AD /* MapKit.framework */; };
 		8BE65CB31D1E59A000D422AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE65CB21D1E59A000D422AD /* MainViewController.swift */; };
 		8BE65CB51D1E59D500D422AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE65CB41D1E59D500D422AD /* QuartzCore.framework */; };
+		8BE65CB71D1E78EE00D422AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE65CB61D1E78EE00D422AD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8BE65CB01D1E566900D422AD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8BE65CB21D1E59A000D422AD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8BE65CB41D1E59D500D422AD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8BE65CB61D1E78EE00D422AD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE65CB71D1E78EE00D422AD /* CoreLocation.framework in Frameworks */,
 				8BE65CB51D1E59D500D422AD /* QuartzCore.framework in Frameworks */,
 				8BE65CB11D1E566900D422AD /* MapKit.framework in Frameworks */,
 			);
@@ -46,6 +49,7 @@
 		86146C9F1D1E309200B3A52F = {
 			isa = PBXGroup;
 			children = (
+				8BE65CB61D1E78EE00D422AD /* CoreLocation.framework */,
 				8BE65CB41D1E59D500D422AD /* QuartzCore.framework */,
 				8BE65CB01D1E566900D422AD /* MapKit.framework */,
 				86146CAA1D1E309200B3A52F /* Parking */,
