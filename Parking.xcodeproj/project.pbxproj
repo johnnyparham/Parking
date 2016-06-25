@@ -31,6 +31,8 @@
 		86146CE51D1E8FC200B3A52F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */; };
 		86146CE71D1E91A500B3A52F /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE61D1E91A500B3A52F /* ActivityView.swift */; };
 		86146CE91D1E927C00B3A52F /* ActivityView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE81D1E927C00B3A52F /* ActivityView2.swift */; };
+		8B8084671D1E9E6800B10663 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8084661D1E9E6800B10663 /* MapViewController.swift */; };
+		8B80846A1D1EB0D200B10663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8084691D1EB0D200B10663 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		86146CE61D1E91A500B3A52F /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		86146CE81D1E927C00B3A52F /* ActivityView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView2.swift; sourceTree = "<group>"; };
+		8B8084661D1E9E6800B10663 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../untitled folder 2/Parking/Parking/MapViewController.swift"; sourceTree = "<group>"; };
+		8B8084691D1EB0D200B10663 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,20 +94,7 @@
 		86146C9F1D1E309200B3A52F = {
 			isa = PBXGroup;
 			children = (
-				86146CDF1D1E68AF00B3A52F /* Bridging-Header.h */,
-				86146CD91D1E66CC00B3A52F /* libz.tbd */,
-				86146CD71D1E66A900B3A52F /* libsqlite3.tbd */,
-				86146CE01D1E6BF700B3A52F /* Bolts.framework */,
-				86146CDD1D1E673C00B3A52F /* Parse.framework */,
-				86146CD51D1E667C00B3A52F /* SystemConfiguration.framework */,
-				86146CD31D1E667300B3A52F /* StoreKit.framework */,
-				86146CD11D1E666200B3A52F /* Security.framework */,
-				86146CCF1D1E665500B3A52F /* QuartzCore.framework */,
-				86146CCD1D1E664900B3A52F /* MobileCoreServices.framework */,
-				86146CCB1D1E658200B3A52F /* CoreLocation.framework */,
-				86146CC91D1E657400B3A52F /* CoreGraphics.framework */,
-				86146CC71D1E656400B3A52F /* CFNetwork.framework */,
-				86146CC51D1E655300B3A52F /* AudioToolbox.framework */,
+				8B8084681D1E9E7600B10663 /* Dependencies */,
 				86146CAA1D1E309200B3A52F /* Parking */,
 				86146CA91D1E309200B3A52F /* Products */,
 			);
@@ -125,6 +116,8 @@
 				1BCB74391D1E7C4D00CE0B3A /* TblCell.swift */,
 				86146CE21D1E8E3E00B3A52F /* LoginViewController.swift */,
 				86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */,
+				8B8084661D1E9E6800B10663 /* MapViewController.swift */,
+				8B8084691D1EB0D200B10663 /* MainViewController.swift */,
 				86146CC11D1E4D5900B3A52F /* Storyboard.storyboard */,
 				1BCB74371D1E7C4D00CE0B3A /* LocationCell.xib */,
 				86146CB21D1E309200B3A52F /* Assets.xcassets */,
@@ -134,6 +127,27 @@
 				86146CE81D1E927C00B3A52F /* ActivityView2.swift */,
 			);
 			path = Parking;
+			sourceTree = "<group>";
+		};
+		8B8084681D1E9E7600B10663 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				86146CDF1D1E68AF00B3A52F /* Bridging-Header.h */,
+				86146CD91D1E66CC00B3A52F /* libz.tbd */,
+				86146CD71D1E66A900B3A52F /* libsqlite3.tbd */,
+				86146CE01D1E6BF700B3A52F /* Bolts.framework */,
+				86146CDD1D1E673C00B3A52F /* Parse.framework */,
+				86146CD51D1E667C00B3A52F /* SystemConfiguration.framework */,
+				86146CD31D1E667300B3A52F /* StoreKit.framework */,
+				86146CD11D1E666200B3A52F /* Security.framework */,
+				86146CCF1D1E665500B3A52F /* QuartzCore.framework */,
+				86146CCD1D1E664900B3A52F /* MobileCoreServices.framework */,
+				86146CCB1D1E658200B3A52F /* CoreLocation.framework */,
+				86146CC91D1E657400B3A52F /* CoreGraphics.framework */,
+				86146CC71D1E656400B3A52F /* CFNetwork.framework */,
+				86146CC51D1E655300B3A52F /* AudioToolbox.framework */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +228,9 @@
 				1BCB743C1D1E7C4D00CE0B3A /* TblCell.swift in Sources */,
 				86146CE51D1E8FC200B3A52F /* SignUpViewController.swift in Sources */,
 				86146CE91D1E927C00B3A52F /* ActivityView2.swift in Sources */,
+				8B80846A1D1EB0D200B10663 /* MainViewController.swift in Sources */,
 				86146CE71D1E91A500B3A52F /* ActivityView.swift in Sources */,
+				8B8084671D1E9E6800B10663 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
