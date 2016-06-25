@@ -10,6 +10,7 @@
 		1BCB743A1D1E7C4D00CE0B3A /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCB74371D1E7C4D00CE0B3A /* LocationCell.xib */; };
 		1BCB743B1D1E7C4D00CE0B3A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB74381D1E7C4D00CE0B3A /* MessageView.swift */; };
 		1BCB743C1D1E7C4D00CE0B3A /* TblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCB74391D1E7C4D00CE0B3A /* TblCell.swift */; };
+		1F7942E91D1EC93B006E85D4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7942E81D1EC93B006E85D4 /* MapViewController.swift */; };
 		86146CAC1D1E309200B3A52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CAB1D1E309200B3A52F /* AppDelegate.swift */; };
 		86146CB31D1E309200B3A52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86146CB21D1E309200B3A52F /* Assets.xcassets */; };
 		86146CB61D1E309200B3A52F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86146CB41D1E309200B3A52F /* LaunchScreen.storyboard */; };
@@ -31,7 +32,6 @@
 		86146CE51D1E8FC200B3A52F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */; };
 		86146CE71D1E91A500B3A52F /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE61D1E91A500B3A52F /* ActivityView.swift */; };
 		86146CE91D1E927C00B3A52F /* ActivityView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86146CE81D1E927C00B3A52F /* ActivityView2.swift */; };
-		8B8084671D1E9E6800B10663 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8084661D1E9E6800B10663 /* MapViewController.swift */; };
 		8B80846A1D1EB0D200B10663 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8084691D1EB0D200B10663 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 		1BCB74371D1E7C4D00CE0B3A /* LocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
 		1BCB74381D1E7C4D00CE0B3A /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		1BCB74391D1E7C4D00CE0B3A /* TblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblCell.swift; sourceTree = "<group>"; };
+		1F7942E81D1EC93B006E85D4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		86146CA81D1E309200B3A52F /* Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86146CAB1D1E309200B3A52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86146CB21D1E309200B3A52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		86146CE61D1E91A500B3A52F /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		86146CE81D1E927C00B3A52F /* ActivityView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView2.swift; sourceTree = "<group>"; };
-		8B8084661D1E9E6800B10663 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "../../untitled folder 2/Parking/Parking/MapViewController.swift"; sourceTree = "<group>"; };
 		8B8084691D1EB0D200B10663 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +116,7 @@
 				1BCB74391D1E7C4D00CE0B3A /* TblCell.swift */,
 				86146CE21D1E8E3E00B3A52F /* LoginViewController.swift */,
 				86146CE41D1E8FC200B3A52F /* SignUpViewController.swift */,
-				8B8084661D1E9E6800B10663 /* MapViewController.swift */,
+				1F7942E81D1EC93B006E85D4 /* MapViewController.swift */,
 				8B8084691D1EB0D200B10663 /* MainViewController.swift */,
 				86146CC11D1E4D5900B3A52F /* Storyboard.storyboard */,
 				1BCB74371D1E7C4D00CE0B3A /* LocationCell.xib */,
@@ -225,12 +225,12 @@
 				86146CE31D1E8E3E00B3A52F /* LoginViewController.swift in Sources */,
 				1BCB743B1D1E7C4D00CE0B3A /* MessageView.swift in Sources */,
 				86146CAC1D1E309200B3A52F /* AppDelegate.swift in Sources */,
+				1F7942E91D1EC93B006E85D4 /* MapViewController.swift in Sources */,
 				1BCB743C1D1E7C4D00CE0B3A /* TblCell.swift in Sources */,
 				86146CE51D1E8FC200B3A52F /* SignUpViewController.swift in Sources */,
 				86146CE91D1E927C00B3A52F /* ActivityView2.swift in Sources */,
 				8B80846A1D1EB0D200B10663 /* MainViewController.swift in Sources */,
 				86146CE71D1E91A500B3A52F /* ActivityView.swift in Sources */,
-				8B8084671D1E9E6800B10663 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
