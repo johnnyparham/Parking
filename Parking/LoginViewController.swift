@@ -154,12 +154,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIAlertViewDel
     
     
     func prepareToLeaveViewController() {
-        UIView.animateWithDuration(0.6) { 
-            self.loginButton.alpha = 0
-            self.signupButton.alpha = 0
+        UIView.animateWithDuration(0.6) {
             self.loginButton.transform = CGAffineTransformMakeRotation(CGFloat((360 + 180) * M_PI/180))
             self.signupButton.transform = CGAffineTransformMakeRotation(CGFloat((360 + 180) * M_PI/180))
         }
+        
+        UIView.animateWithDuration(0.6, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { 
+            self.loginButton.alpha = 0
+            self.signupButton.alpha = 0
+            }, completion: nil)
         
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.usernameField.transform = CGAffineTransformMakeScale(0.6, 1)

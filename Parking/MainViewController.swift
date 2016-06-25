@@ -38,11 +38,15 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.5) { 
+            self.findButton.alpha = 1
+            self.reportButton.alpha = 1
+        }
+        
         UIView.animateWithDuration(0.5, delay: 0.6, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.par.transform = CGAffineTransformIdentity
             self.king.transform = CGAffineTransformIdentity
-            self.findButton.alpha = 1
-            self.reportButton.alpha = 1
+            
             }, completion: nil)
         
         
